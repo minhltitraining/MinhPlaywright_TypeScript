@@ -14,11 +14,11 @@ export class LoginPage extends AbstractPage {
     }
 
     async assertUrl(): Promise<void> {
-        await expect(this.page.url()).toBe('https://demo.spreecommerce.org/login');
+        expect(this.page.url()).toBe('https://demo.spreecommerce.org/login');
     }
 
     async assertTitle(): Promise<void>{
-        await expect(this.page).toHaveTitle("Login - Spree Demo Site")
+        expect(this.page).toHaveTitle("Login - Spree Demo Site")
     }
 
     
